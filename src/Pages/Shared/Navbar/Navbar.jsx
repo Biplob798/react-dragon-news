@@ -12,6 +12,9 @@ const Navbar = () => {
       <li>
         <NavLink to="/career">Career</NavLink>
       </li>
+      <li>
+        <NavLink to="/login">Login</NavLink>
+      </li>
     </>
   );
 
@@ -52,7 +55,7 @@ const Navbar = () => {
             <img src={usersDefaultPic} />
           </div>
         </label>
-        <Link>
+        <Link to="/login">
           <button className="btn bg-[#403F3F] text-white px-8">Login</button>
         </Link>
       </div>
