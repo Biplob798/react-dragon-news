@@ -49,9 +49,11 @@ const RightSideNav = () => {
 
       <div className="p-4 space-y-4 bg-[#F3F3F3]">
         <h2 className="text-2xl font-bold">Q Zone</h2>
-        <img src={qZone1} alt="" />
-        <img src={qZone2} alt="" />
-        <img src={qZone3} alt="" />
+        <div className="mx-auto">
+          <img src={qZone1} alt="" />
+          <img src={qZone2} alt="" />
+          <img src={qZone3} alt="" />
+        </div>
       </div>
       <div className="bg-[#05001DCC] p-4 space-y-4 text-center">
         <h2 className="text-white text-4xl font-bold">

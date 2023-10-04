@@ -11,7 +11,7 @@ const LeftSideNav = () => {
   }, []);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 p-4 border">
       <h2 className="text-2xl">All Categories</h2>
       <p className="text-2xl w-full bg-[#E7E7E7] text-black p-4 text-center">
         National News
