@@ -6,6 +6,7 @@ import Navbar from "../Shared/Navbar/Navbar";
 import RightSideNav from "../Shared/RightSideNav/RightSideNav";
 import BreakingNews from "./BreakingNews";
 import NewsCard from "./NewsCard";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const news = useLoaderData();
@@ -13,6 +14,9 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Dragon News | Home</title>
+      </Helmet>
       <Header></Header>
       <BreakingNews></BreakingNews>
       <Navbar></Navbar>

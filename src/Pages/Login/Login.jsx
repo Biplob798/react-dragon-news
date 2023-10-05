@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const { logIn } = useContext(AuthContext);
@@ -79,6 +80,9 @@ const Login = () => {
           </Link>
         </p>
       </div>
+      {/* <Helmet>
+        <title>Dragon News | Home</title>
+      </Helmet> */}
     </div>
   );
 };
