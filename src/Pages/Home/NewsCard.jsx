@@ -20,21 +20,23 @@ const NewsCard = ({ news }) => {
           <img className="" src={image_url} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{title}</h2>
+          <h2 className="text-2xl card-title">{title}</h2>
 
-          {details.length > 200 ? (
-            <p>
-              {details.slice(0, 200)}
-              <Link
-                to={`/news/${_id}`}
-                className="font-bold text-xl text-red-500"
-              >
-                Read More...
-              </Link>
-            </p>
-          ) : (
-            <p>{details}</p>
-          )}
+          <div className="text-lg">
+            {details.length > 200 ? (
+              <p>
+                {details.slice(0, 200)}
+                <Link
+                  to={`/news/${_id}`}
+                  className="font-bold text-xl text-red-500"
+                >
+                  Read More...
+                </Link>
+              </p>
+            ) : (
+              <p>{details}</p>
+            )}
+          </div>
         </div>
       </div>
     </div>
